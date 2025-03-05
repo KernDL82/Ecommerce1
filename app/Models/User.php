@@ -3,9 +3,9 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -46,29 +46,24 @@ class User extends Authenticatable
         ];
     }
 
-
-
     /**
-     *  =============== RELATIONSHIPS  ===============
+     *  =============== RELATIONSHIPS  ===============.
      */
 
-
     /**
-     *  =============== SCOPES  ===============
+     *  =============== SCOPES  ===============.
      */
 
-
     /**
-     *  =============== FUNCTIONS  ===============
+     *  =============== FUNCTIONS  ===============.
      */
-
+    /**
+     * get groups user belongs too, associated with getGroup cretaed in product controller.
+     */
     public function getGroups(): array
     {
-        return [];
+        $group_ids = [1];
+
+        return $group_ids;
     }
-
-
-
-
-
 }
