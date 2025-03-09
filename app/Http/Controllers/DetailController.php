@@ -9,7 +9,7 @@ class DetailController extends Controller
 {
     public function index($id)
     {
-        // cheks for user login /getgroups check for user groups
+        // checks for user login /getgroups check for user groups
         $group_ids = Auth::check() ? Auth::user()->getGroups() : [1];
         // this will only show one product
         $data = Product::singleProduct($id)->withPrices()->get()->first();

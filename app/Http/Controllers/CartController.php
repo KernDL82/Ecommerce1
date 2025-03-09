@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\DB;
 class CartController extends Controller
 {
     /**
-     * Display all products added to cart.
+     * Display all products user added to cart.
      */
     public function index()
     {

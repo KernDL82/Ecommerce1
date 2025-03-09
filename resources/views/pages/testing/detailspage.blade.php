@@ -2,6 +2,7 @@
 
 
     <h1>Details Page</h1>
+    // here displays what would be seen on the frontend especially with the use of the curly brackets
 
     <div class="row">
         <div class="col-md-4">
