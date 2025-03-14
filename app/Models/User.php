@@ -5,6 +5,7 @@ namespace App\Models;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -58,6 +59,19 @@ class User extends Authenticatable
         return $this->belongsToMany(Product::class, 'cart', 'user_id', 'product_id')
         ->withPivot('id', 'quantity')
         ->withTimestamps();
+    }
+
+    /**
+     * Addresses.
+     *
+     * @return array
+     */
+    /**
+     * Get all of the addresses for the User.
+     */
+    public function addresses(): HasMany
+    {
+        return $this->hasMany(Address::class);
     }
 
     /**
