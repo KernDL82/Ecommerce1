@@ -15,7 +15,7 @@ class CheckoutPaymentController extends Controller
      */
     public function index($payment)
     {
-        // Get groups
+        // Get groups, check to see if user is logged in
         $group_ids = Auth::check() ? Auth::user()->getGroups() : [1];
 
         // Get user
