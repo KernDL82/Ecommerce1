@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class ShippingOption extends Model
 {
@@ -11,5 +12,11 @@ class ShippingOption extends Model
 
     protected $table = 'shipping_options';
 
-
+    /**
+     * The shipping that belong to the ShippingOption.
+     */
+    public function shipping(): BelongsTo
+    {
+        return $this->belongsTo(Shipping::class, 'shipping_id', 'id');
+    }
 }
