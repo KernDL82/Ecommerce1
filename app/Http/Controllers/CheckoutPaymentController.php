@@ -38,8 +38,18 @@ class CheckoutPaymentController extends Controller
 
         // determine payment
         switch ($payment) {
-            case 'value':
-                // code...
+            case 'stripe':
+                $stripe_checkout->startCheckoutSession();
+                $stripe_checkout->addEmail($user->email);
+                $stripe_checkout->addProducts($cart_data);
+                $stripe_checkout->addPointsCoupon();
+                $stripe_checkout->enablePromoCodes();
+                $shipping_data = $shipping_helper->getGroupShippingOptions();
+                $stripe_checkout->addShippingOptions($shipping_data);
+                $stripe_checkout->createSession();
+                $insert_data = $stripe_checkout->getOrderCreateData();
+                $completed = true;
+
                 break;
 
             default:
@@ -85,6 +95,9 @@ class CheckoutPaymentController extends Controller
         $order->order_products()->saveMany($records);
 
         // redirect
+        if ($payment == 'stripe') {
+            return redirect($stripe_checkout->getUrl());
+        }
 
         // end testing
         dd('Payment successful during testing');
