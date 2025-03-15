@@ -17,14 +17,16 @@ class StripeCheckout
     // Add checkout session id to url
     private const URL_ID = '{CHECKOUT_SESSION_ID}';
 
+    /**
+     * this is necessary to connect to stripe key.
+     */
     public function __construct()
     {
         $this->stripe = StripeClient::getClient();
     }
 
-
     /**
-     * Undocumented function
+     * Undocumented function.
      *
      * @return void
      */
@@ -33,18 +35,16 @@ class StripeCheckout
         $YOUR_DOMAIN = url('');
         $this->stripe_checkout_data = [
             'mode' => 'payment',
-            'success_url' => $YOUR_DOMAIN . '/checkout/success/' . self::URL_ID,
-            'cancel_url' => $YOUR_DOMAIN . '/checkout',
+            'success_url' => $YOUR_DOMAIN.'/checkout/success/'.self::URL_ID,
+            'cancel_url' => $YOUR_DOMAIN.'/checkout',
         ];
     }
 
-
     /**
-     * Undocumented function
+     * Displays product infomation on stripe checkout page
      * Source: https://docs.stripe.com/checkout/quickstartt
-     * Source: https://docs.stripe.com/payments/accept-a-payment
+     * Source: https://docs.stripe.com/payments/accept-a-payment.
      *
-     * @param Collection $products_data
      * @return void
      */
     public function addProducts(Collection $products_data)
@@ -67,7 +67,7 @@ class StripeCheckout
     }
 
     /**
-     * Undocumented function
+     * Undocumented function.
      *
      * @return void
      */
@@ -75,11 +75,11 @@ class StripeCheckout
     {
         header('Content-Type: application/json');
         $this->checkout_session = $this->stripe->checkout->sessions->create($this->stripe_checkout_data);
-        header("HTTP/1.1 303 See Other");
+        header('HTTP/1.1 303 See Other');
     }
 
     /**
-     * Undocumented function
+     * Undocumented function.
      *
      * @return void
      */
@@ -92,11 +92,11 @@ class StripeCheckout
      * ==================== OPTIONAL FUNCTIONS TO ADD TO CHECKOUT SESSION ===========================.
      */
 
-
     /**
-     * Undocumented function
+     * Undocumented function.
      *
      * @param [type] $email
+     *
      * @return void
      */
     public function addEmail($email)
@@ -105,7 +105,7 @@ class StripeCheckout
     }
 
     /**
-     * Undocumented function
+     * Undocumented function.
      *
      * @return void
      */
@@ -115,25 +115,24 @@ class StripeCheckout
     }
 
     /**
-     * Undocumented function
+     * Undocumented function.
      *
      * @return void
      */
     public function enablePromoCodes()
     {
-
         if ($this->coupon_used) {
             return false;
         }
 
         $this->stripe_checkout_data['allow_promotion_codes'] = true;
+
         return true;
     }
 
     /**
-     * Undocumented function
+     * Undocumented function.
      *
-     * @param Collection $shipping_data
      * @return void
      */
     public function addShippingOptions(Collection $shipping_data)
@@ -151,9 +150,10 @@ class StripeCheckout
      */
 
     /**
-     * Undocumented function
+     * Undocumented function.
      *
      * @param [type] $session_id
+     *
      * @return void
      */
     public function getCheckoutOrder($session_id)
@@ -162,10 +162,11 @@ class StripeCheckout
     }
 
     /**
-     * Undocumented function
+     * Undocumented function.
      *
      * @param [type] $checkout_session
-     * @return boolean
+     *
+     * @return bool
      */
     public function isCheckoutCompleted($checkout_session)
     {
@@ -177,7 +178,7 @@ class StripeCheckout
      */
 
     /**
-     * Undocumented function
+     * Undocumented function.
      *
      * @return void
      */
@@ -190,9 +191,10 @@ class StripeCheckout
     }
 
     /**
-     * Undocumented function
+     * Undocumented function.
      *
      * @param [type] $checkout_session
+     *
      * @return void
      */
     public function getOrderCompletedData($checkout_session)
@@ -207,7 +209,7 @@ class StripeCheckout
     }
 
     /**
-     * Undocumented function
+     * Undocumented function.
      *
      * @return void
      */
@@ -215,5 +217,4 @@ class StripeCheckout
     {
         dd($this->checkout_session);
     }
-
 } // end Class
