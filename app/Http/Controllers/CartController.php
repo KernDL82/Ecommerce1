@@ -12,22 +12,26 @@ class CartController extends Controller
     /**
      * Display all products user added to cart.
      */
+    // The index function will get or display all the products a user added to the cart
+    // Auth is a block of code that checks for user's login
     public function index()
     {
         $group_ids = Auth::check() ? Auth::user()->getGroups() : [1];
 
         $user = Auth::user();
+        // $user->products is a many to many relationship $user is assigned to user and products assigned to products
 
         $cart_data = $user->products()->withPrices()->get();
 
         $cart_data->calculateSubtotal();
 
-        return view('pages.testing.cartpage', compact('cart_data'));
+        return view('pages.default.cartpage', compact('cart_data'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
+    // this functions adds an item to cart from the details page only
     public function store(Request $request)
     {
         Cart::updateOrCreate(
@@ -48,6 +52,7 @@ class CartController extends Controller
         return redirect()->route('cart.index')->with('message', 'Product removed from cart');
     }
 
+    // here adds item to cart from store page, however because of how the ui is setup only one item at a time can be added from the store page
     public function addToCartFromStore(Request $request)
     {
         Cart::updateOrCreate(
