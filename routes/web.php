@@ -52,3 +52,5 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/checkout/success/{id}', [CheckoutSuccessController::class, 'index'])->name('checkout.success');
 });
+
+@include 'admin-routes.php';

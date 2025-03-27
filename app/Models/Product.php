@@ -11,6 +11,19 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+    // allows access to the columns in the database from the webpage.
+    protected $fillable = [
+        'title',
+        'short_description',
+        'full_description',
+        'price',
+        'quantity',
+        'image_path',
+        'image_name',
+        'category',
+        'classification',
+        'status',
+    ];
 
     /**
      * Create a new Eloquent Collection instance.
