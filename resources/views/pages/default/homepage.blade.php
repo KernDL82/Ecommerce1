@@ -15,13 +15,14 @@
                         <div class="one-forth d-flex js-fullheight align-items-center ftco-animate"
                             data-scrollax=" properties: { translateY: '70%' }">
                             <div class="text">
-                                <span class="subheading">Winkel eCommerce Shop</span>
+                                <span class="subheading">KINTENT PRODUCE</span>
                                 <div class="horizontal">
-                                    <h3 class="vr" style="background-image: url('images/divider.jpg');">Stablished Since
-                                        2000</h3>
-                                    <h1 class="mb-4 mt-3">Catch Your Own <br><span>Stylish &amp; Look</span></h1>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary
-                                        regelialia. It is a paradisematic country.</p>
+                                    <h3 class="vr" style="background-image: url('images/divider.jpg');">Established
+                                        Since
+                                        2024</h3>
+                                    <h1 class="mb-4 mt-3">SHOP FOR YOUR OWN <br><span>PRODUCE &amp; TOOLS</span></h1>
+                                    <p>Trinidad and Tobago's only solution for all things related to mushroom
+                                        agriculture</p>
 
                                     <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">Discover Now</a></p>
                                 </div>
@@ -42,13 +43,12 @@
                         <div class="one-forth d-flex js-fullheight align-items-center ftco-animate"
                             data-scrollax=" properties: { translateY: '70%' }">
                             <div class="text">
-                                <span class="subheading">Winkel eCommerce Shop</span>
+                                <span class="subheading">KP</span>
                                 <div class="horizontal">
                                     <h3 class="vr" style="background-image: url(images/divider.jpg);">Best eCommerce
                                         Online Shop</h3>
-                                    <h1 class="mb-4 mt-3">A Thouroughly <span>Modern</span> Woman</h1>
-                                    <p>A small river named Duden flows by their place and supplies it with the necessary
-                                        regelialia. It is a paradisematic country.</p>
+                                    <h1 class="mb-4 mt-3">Locally Cultivated <span>Produce</span> Substrate</h1>
+                                    <p>Modern Solutions to Agricultural Needs</p>
 
                                     <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">Shop Now</a></p>
                                 </div>
