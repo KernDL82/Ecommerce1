@@ -2,9 +2,9 @@
 
 namespace Database\Factories;
 
-use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
@@ -34,12 +34,11 @@ class ProductFactory extends Factory
         ];
     }
 
-
     public function randomImage()
     {
         // Custom disk: config/filesystems.php - images
         // load images
-        $images = Storage::disk('images')->files();
+        $images = Storage::disk('products')->files();
 
         if (empty($images)) {
             return 'no_image.jpg';

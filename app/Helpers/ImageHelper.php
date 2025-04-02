@@ -24,9 +24,10 @@ class ImageHelper
         $this->disk = $disk;
     }
 
+    // imageupload handles uploading files from database to webpage
     public function imageUpload($file)
     {
-        // Hash name
+        // generate a unique Hash name
         $filename = $file->hashName();
 
         // Store in directory
@@ -45,7 +46,7 @@ class ImageHelper
     {
         if ($this->fileExist($filename)) {
             // NOTE::FOR TESTING, DO NOT REMOVE PREVIOUS IMAGE
-            // Storage::disk('products')->delete($oldfilename);
+            // Storage::disk('products')->delete($filename);
             return true;
         }
 

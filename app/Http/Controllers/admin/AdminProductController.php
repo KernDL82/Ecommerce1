@@ -4,14 +4,16 @@ namespace App\Http\Controllers\admin;
 
 use App\Helpers\ImageHelper;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Models\Product;
-use Illuminate\Http\Request;
 
 class AdminProductController extends Controller
 {
     /**
      * Display a listing of the resource.
+     * this function pulls all product data to the $product_data function then parsed to the admin.default.etc page.
+     * products can be viewed online with this block of code.
      */
     public function index()
     {
@@ -25,13 +27,25 @@ class AdminProductController extends Controller
      */
     public function create()
     {
+        return view('admin.default.products.admin-add-products');
     }
 
     /**
      * Store a newly created resource in storage.
+     * Block of code used to create new data on the admin\products\edit add new item.
+     * 'Product' creates a new product in the database
+     * $validate data validates all data, imagehelper uploads images.
      */
-    public function store(Request $request)
+    public function store(CreateProductRequest $request)
     {
+        $validatedData = $request->validated();
+
+        $imageHelper = new ImageHelper();
+        $validatedData['image_path'] = '/images/products/';
+        $validatedData['image_name'] = $imageHelper->imageUpload($request->file('image_upload'));
+        Product::create($validatedData);
+
+        return redirect()->route('admin.products.index')->with('message', 'Product created successfully');
     }
 
     /**
@@ -43,6 +57,7 @@ class AdminProductController extends Controller
 
     /**
      * Show the form for editing the specified resource.
+     * Loads the edit page.
      */
     public function edit(string $id)
     {
@@ -63,6 +78,7 @@ class AdminProductController extends Controller
 
         if ($request->hasFile('image_upload')) {
             $validateData['image_name'] = $imageHelper->imageUpload($request->file('image_upload'));
+            $imageHelper->removeExistingImage($product->image_name);
         }
 
         $product->update($validatedData);

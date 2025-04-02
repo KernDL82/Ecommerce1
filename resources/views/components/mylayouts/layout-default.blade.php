@@ -88,7 +88,13 @@
                             </div>
                         </li>
                     @endauth
-                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                    @auth
+                        @if (Auth::user()->role == 'admin')
+                            <li class="nav-item"><a href="{{ route('admin.products.index') }}"
+                                    class="nav-link">Dashboard</a>
+                            </li>
+                        @endif
+                    @endauth
                     <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
 
 

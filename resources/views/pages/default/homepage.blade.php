@@ -65,7 +65,7 @@
             <div class="row">
                 <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
                     style="background-image: url('images/about.jpg');">
-                    <a href="https://vimeo.com/45830194"
+                    <a href="https://vimeo.com/593325832"
                         class="icon popup-vimeo d-flex justify-content-center align-items-center">
                         <span class="icon-play"></span>
                     </a>
@@ -77,9 +77,8 @@
                         </div>
                     </div>
                     <div class="pb-md-5">
-                        <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious
-                            Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their
-                            agency, where they abused her for their.</p>
+                        <p>Shipping Supported By Stripe.com
+                        </p>
                         <div class="row ftco-services">
                             <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
                                 <div class="media block-6 services">
@@ -88,8 +87,9 @@
                                     </div>
                                     <div class="media-body">
                                         <h3 class="heading">Refund Policy</h3>
-                                        <p>Even the all-powerful Pointing has no control about the blind texts it is an
-                                            almost unorthographic.</p>
+                                        <p>At Kintent Produce, we strive to ensure our customers are satisfied with
+                                            their purchases. However, if you are not completely happy, we are here to
+                                            help.</p>
                                     </div>
                                 </div>
                             </div>
@@ -100,8 +100,7 @@
                                     </div>
                                     <div class="media-body">
                                         <h3 class="heading">Premium Packaging</h3>
-                                        <p>Even the all-powerful Pointing has no control about the blind texts it is an
-                                            almost unorthographic.</p>
+                                        <p>Packaged with care</p>
                                     </div>
                                 </div>
                             </div>
@@ -112,8 +111,7 @@
                                     </div>
                                     <div class="media-body">
                                         <h3 class="heading">Superior Quality</h3>
-                                        <p>Even the all-powerful Pointing has no control about the blind texts it is an
-                                            almost unorthographic.</p>
+                                        <p>Premium quality products backed by international standards</p>
                                     </div>
                                 </div>
                             </div>
