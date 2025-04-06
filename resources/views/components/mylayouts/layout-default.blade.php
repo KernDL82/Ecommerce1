@@ -38,7 +38,7 @@
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon mr-2 d-flex justify-content-center align-items-center"><span
                                     class="icon-phone2"></span></div>
-                            <span class="text">+ 1235 2355 98</span>
+                            <span class="text">+ 1868 Kin tent</span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon mr-2 d-flex justify-content-center align-items-center"><span
@@ -56,7 +56,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('home.index') }}">Minishop</a>
+            <a class="navbar-brand" href="{{ route('home.index') }}">Kintent Produce</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -212,14 +212,13 @@
                         <h2 class="ftco-heading-2">Have a Questions?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St.
-                                        Mountain
-                                        View, San Francisco, California, USA</span></li>
+                                <li><span class="icon icon-map-marker"></span><span class="text">99 East Boundary rd
+                                        , Marabella, San Fernando, Trinidad</span></li>
                                 <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2
                                             392 3929
                                             210</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span
-                                            class="text">info@yourdomain.com</span></a></li>
+                                            class="text">Questions@KP.com</span></a></li>
                             </ul>
                         </div>
                     </div>

@@ -127,7 +127,7 @@
             <div class="row justify-content-center mb-3 pb-3">
                 <div class="col-md-12 heading-section text-center ftco-animate">
                     <h2 class="mb-4">Best Sellers</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                    <p>See selection for the most popular products!</p>
                 </div>
             </div>
         </div>
@@ -141,7 +141,7 @@
                             <div class="overlay"></div>
                         </a>
                         <div class="text py-3 px-3">
-                            <h3><a href="#">Floral Jackquard Pullover</a></h3>
+                            <h3><a href="#">Shitake Mushrooms</a></h3>
                             <div class="d-flex">
                                 <div class="pricing">
                                     <p class="price"><span class="mr-2 price-dc">$120.00</span><span
@@ -173,7 +173,7 @@
                             <div class="overlay"></div>
                         </a>
                         <div class="text py-3 px-3">
-                            <h3><a href="#">Floral Jackquard Pullover</a></h3>
+                            <h3><a href="#">Mushroom Growing Bags</a></h3>
                             <div class="d-flex">
                                 <div class="pricing">
                                     <p class="price"><span>$120.00</span></p>
@@ -204,10 +204,10 @@
                             <div class="overlay"></div>
                         </a>
                         <div class="text py-3 px-3">
-                            <h3><a href="#">Floral Jackquard Pullover</a></h3>
+                            <h3><a href="#">Mushroom Grow Kits</a></h3>
                             <div class="d-flex">
                                 <div class="pricing">
-                                    <p class="price"><span>$120.00</span></p>
+                                    <p class="price"><span>$65.00</span></p>
                                 </div>
                                 <div class="rating">
                                     <p class="text-right">
@@ -235,10 +235,10 @@
                             <div class="overlay"></div>
                         </a>
                         <div class="text py-3 px-3">
-                            <h3><a href="#">Floral Jackquard Pullover</a></h3>
+                            <h3><a href="#">Enoki Mushrooms</a></h3>
                             <div class="d-flex">
                                 <div class="pricing">
-                                    <p class="price"><span>$120.00</span></p>
+                                    <p class="price"><span>$60.00</span></p>
                                 </div>
                                 <div class="rating">
                                     <p class="text-right">
