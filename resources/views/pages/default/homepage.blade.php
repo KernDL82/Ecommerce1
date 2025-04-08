@@ -230,7 +230,8 @@
                 </div>
                 <div class="col-sm col-md-6 col-lg ftco-animate">
                     <div class="product">
-                        <a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.jpg"
+                        <a href="#" class="img-prod"><img class="img-fluid"
+                                src="C:/Users/Krim2/Documents/Project2/example-app/storage/app/public/images/products/product-4.jpg"
                                 alt="Colorlib Template">
                             <div class="overlay"></div>
                         </a>
