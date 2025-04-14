@@ -150,8 +150,6 @@ class StripeCheckout
      */
 
     /**
-     * Undocumented function.
-     *
      * @param [type] $session_id
      *
      * @return void
@@ -162,7 +160,7 @@ class StripeCheckout
     }
 
     /**
-     * Undocumented function.
+     * Successfull checkout payment.
      *
      * @param [type] $checkout_session
      *

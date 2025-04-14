@@ -272,10 +272,8 @@
                 </div>
                 <div class="col-md-4 py-md-5 ftco-animate">
                     <div class="text py-3 py-md-5">
-                        <h2 class="mb-4">New Women's Clothing Summer Collection 2019</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-                            Semantics, a large language ocean.</p>
+                        <h2 class="mb-4">Sale On Mushrooms with Special Code</h2>
+                        <p>Mushrooms, Tools, Services.</p>
                         <p><a href="#" class="btn btn-white px-4 py-3">Shop now</a></p>
                     </div>
                 </div>
@@ -287,10 +285,8 @@
                 </div>
                 <div class="col-md-7 py-3 py-md-5 ftco-animate">
                     <div class="text text-2 py-md-5">
-                        <h2 class="mb-4">New Men's Clothing Summer Collection 2019</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-                            Semantics, a large language ocean.</p>
+                        <h2 class="mb-4">Sale on Tools coming soon</h2>
+                        <p>Mushrooms, Tools, Services.</p>
                         <p><a href="#" class="btn btn-white px-4 py-3">Shop now</a></p>
                     </div>
                 </div>
@@ -303,7 +299,7 @@
             <div class="row justify-content-center mb-3 pb-3">
                 <div class="col-md-12 heading-section text-center ftco-animate">
                     <h2 class="mb-4">Products</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                    <p>Mushrooms, Tools, Services.</p>
                 </div>
             </div>
         </div>
@@ -317,11 +313,11 @@
                             <div class="overlay"></div>
                         </a>
                         <div class="text py-3 px-3">
-                            <h3><a href="#">Floral Jackquard Pullover</a></h3>
+                            <h3><a href="#">King Oyster Mushrooms 1LB</a></h3>
                             <div class="d-flex">
                                 <div class="pricing">
-                                    <p class="price"><span class="mr-2 price-dc">$120.00</span><span
-                                            class="price-sale">$80.00</span></p>
+                                    <p class="price"><span class="mr-2 price-dc">$240.00</span><span
+                                            class="price-sale">$160.00</span></p>
                                 </div>
                                 <div class="rating">
                                     <p class="text-right">
@@ -349,10 +345,10 @@
                             <div class="overlay"></div>
                         </a>
                         <div class="text py-3 px-3">
-                            <h3><a href="#">Floral Jackquard Pullover</a></h3>
+                            <h3><a href="#">Freeze dried Mushroom pack</a></h3>
                             <div class="d-flex">
                                 <div class="pricing">
-                                    <p class="price"><span>$120.00</span></p>
+                                    <p class="price"><span>$200.00</span></p>
                                 </div>
                                 <div class="rating">
                                     <p class="text-right">
@@ -380,10 +376,10 @@
                             <div class="overlay"></div>
                         </a>
                         <div class="text py-3 px-3">
-                            <h3><a href="#">Floral Jackquard Pullover</a></h3>
+                            <h3><a href="#">Enoki Mushrooms</a></h3>
                             <div class="d-flex">
                                 <div class="pricing">
-                                    <p class="price"><span>$120.00</span></p>
+                                    <p class="price"><span>$80.00</span></p>
                                 </div>
                                 <div class="rating">
                                     <p class="text-right">
@@ -411,7 +407,7 @@
                             <div class="overlay"></div>
                         </a>
                         <div class="text py-3 px-3">
-                            <h3><a href="#">Floral Jackquard Pullover</a></h3>
+                            <h3><a href="#">Mushroom Fruiting Kits</a></h3>
                             <div class="d-flex">
                                 <div class="pricing">
                                     <p class="price"><span>$120.00</span></p>
@@ -488,8 +484,8 @@
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section ftco-animate">
                     <h2 class="mb-4">Our satisfied customer says</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                        live the blind texts. Separated they live in</p>
+                    <p>Thank you again for your hard work and commitment. Ill gladly recommend your website to friends
+                        and family, and I look forward to continuing to shop with you in the future!</p>
                 </div>
             </div>
             <div class="row ftco-animate">
@@ -503,9 +499,9 @@
                                     </span>
                                 </div>
                                 <div class="text">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-                                        countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Garreth Smith</p>
+                                    <p class="mb-5 pl-4 line">Mushroom Agriculture is a dream of mine, i am happy to
+                                        introduce you to its benefits..</p>
+                                    <p class="name">Guy Gardner</p>
                                     <span class="position">Marketing Manager</span>
                                 </div>
                             </div>
@@ -518,9 +514,10 @@
                                     </span>
                                 </div>
                                 <div class="text">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-                                        countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Garreth Smith</p>
+                                    <p class="mb-5 pl-4 line">"Design is not just about how something looks; it's about
+                                        how it works and feels. Every interface tells a story, and our job is to make
+                                        sure that story is intuitive, empowering, and effortless for the user.</p>
+                                    <p class="name">Matt Murdock</p>
                                     <span class="position">Interface Designer</span>
                                 </div>
                             </div>
@@ -533,9 +530,10 @@
                                     </span>
                                 </div>
                                 <div class="text">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-                                        countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Garreth Smith</p>
+                                    <p class="mb-5 pl-4 line">An interface is a bridge between imagination and reality.
+                                        Our role is to ensure that every design choice resonates with simplicity and
+                                        purpose, making technology feel natural and human.</p>
+                                    <p class="name">Otto Octavious</p>
                                     <span class="position">UI Designer</span>
                                 </div>
                             </div>
@@ -548,9 +546,11 @@
                                     </span>
                                 </div>
                                 <div class="text">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-                                        countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Garreth Smith</p>
+                                    <p class="mb-5 pl-4 line">Great web development is about more than just writing
+                                        code; it's about crafting experiences. Every line we write should empower users,
+                                        simplify tasks, and make the web a more accessible and engaging place for
+                                        everyone.</p>
+                                    <p class="name">Donnie Yuen</p>
                                     <span class="position">Web Developer</span>
                                 </div>
                             </div>
@@ -563,9 +563,11 @@
                                     </span>
                                 </div>
                                 <div class="text">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-                                        countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Garreth Smith</p>
+                                    <p class="mb-5 pl-4 line">A great system analyst is like a detective—they uncover
+                                        hidden needs, bridge communication gaps, and design solutions that make
+                                        technology serve people better. It's all about turning complexity into clarity.
+                                    </p>
+                                    <p class="name">Gary Grice</p>
                                     <span class="position">System Analyst</span>
                                 </div>
                             </div>
@@ -598,5 +600,29 @@
             </div>
         </div>
     </section>
+
+    <script type='text/javascript'>
+        (function(I, L, T, i, c, k, s) {
+            if (I.iticks) return;
+            I.iticks = {
+                host: c,
+                settings: s,
+                clientId: k,
+                cdn: L,
+                queue: []
+            };
+            var h = T.head || T.documentElement;
+            var e = T.createElement(i);
+            var l = I.location;
+            e.async = true;
+            e.src = (L || c) + '/client/inject-v2.min.js';
+            h.insertBefore(e, h.firstChild);
+            I.iticks.call = function(a, b) {
+                I.iticks.queue.push([a, b]);
+            };
+        })(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com',
+            'Fq5GpY5hddAEYoF2y_c', {});
+    </script>
+
 
 </x-mylayouts.layout-default>
