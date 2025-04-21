@@ -42,7 +42,8 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="streetaddress">Street Address</label>
-                                    <input type="text" class="form-control" placeholder="House number and street name">
+                                    <input type="text" class="form-control"
+                                        placeholder="House number and street name">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -90,7 +91,7 @@
                         </div>
                     </form><!-- END -->
 
-
+                    @include('pages.additional.points.points-exchange-default')
 
                     <div class="row mt-5 pt-3 d-flex">
                         <div class="col-md-6 d-flex">
@@ -106,12 +107,18 @@
                                 </p>
                                 <p class="d-flex">
                                     <span>Discount</span>
-                                    <span>$3.00</span>
+                                    <span></span>
                                 </p>
                                 <hr>
                                 <p class="d-flex total-price">
-                                    <span>Total</span>
-                                    <span>${{ app('CustomHelper')->formatPrice($cart_data->getTotal()) }}</span>
+                                    <span>Estimate</span>
+
+
+                                    @if ($points_helper->isDiscountApplied())
+                                        <span>${{ app('CustomHelper')->formatPrice($points_helper->calculateDiscountedPrice()) }}</span>
+                                    @else
+                                        <span>${{ app('CustomHelper')->formatPrice($cart_data->getSubTotal()) }}</span>
+                                    @endif
                                 </p>
                             </div>
                         </div>
@@ -137,14 +144,16 @@
                                 <div class="form-group">
                                     <div class="col-md-12">
                                         <div class="radio">
-                                            <label><input type="radio" name="optradio" class="mr-2"> Paypal</label>
+                                            <label><input type="radio" name="optradio" class="mr-2">
+                                                Paypal</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-12">
                                         <div class="checkbox">
-                                            <label><input type="checkbox" value="" class="mr-2"> I have read and accept
+                                            <label><input type="checkbox" value="" class="mr-2"> I have read
+                                                and accept
                                                 the terms and conditions</label>
                                         </div>
                                     </div>

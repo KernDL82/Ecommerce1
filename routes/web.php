@@ -35,21 +35,21 @@ Route::get('/details/{id}', [DetailController::class, 'index'])->name('shop.deta
 Route::middleware(['auth'])->group(function () {
     // route to load cart page
     Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
-
+    // Route to Add to cart from details page
     Route::put('/cart', [CartController::class, 'store'])->name('cart.store');
-
+    // Route to add to cart from store page
     Route::get('/cart/add/{id}', [CartController::class, 'addToCartFromStore'])->name('cart.addfromstorepage');
-
+    // Route to remopve from cart
     Route::delete('/cart/{id}', [CartController::class, 'destroy'])->name('cart.destroy');
-
+    // Route to load check out page
     Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout.index');
-
+    // Route to exchange points
     Route::post('/checkout/points', [CheckoutController::class, 'points'])->name('checkout.points');
-
+    // Route for stripe checkout - prebuilt
     Route::post('/checkout/payment/{payment}/1', [CheckoutPaymentController::class, 'index'])->name('checkout.stripe');
-
+    // Route for testing stripe checkout
     Route::get('/checkout/{payment}/testing', [CheckoutPaymentController::class, 'index'])->name('checkout.success.testing');
-
+    // Route for successful checkout
     Route::get('/checkout/success/{id}', [CheckoutSuccessController::class, 'index'])->name('checkout.success');
 });
 
