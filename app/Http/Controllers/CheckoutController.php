@@ -24,8 +24,8 @@ class CheckoutController extends Controller
 
         $cart_data->calculateSubtotal();
         // get shipping data
-        // $shipping_helper = new ShippingHelper($group_ids);
-        // $shipping_data = $shipping_helper->getGroupShippingOptions($group_ids);
+        $shipping_helper = new ShippingHelper($group_ids);
+        $shipping_data = $shipping_helper->getGroupShippingOptions($group_ids);
 
         // Adressess
         // $address = $user->addresses()
@@ -37,7 +37,7 @@ class CheckoutController extends Controller
         $discount_data = PointsDiscount::all();
 
         return view('pages.default.checkoutpage',
-            compact('cart_data', 'points_helper', 'discount_data')
+            compact('cart_data', 'shipping_data', 'points_helper', 'discount_data')
             // compact('cart_data', 'shipping_data', 'address', 'points_helper', 'discount_data')
         );
     }

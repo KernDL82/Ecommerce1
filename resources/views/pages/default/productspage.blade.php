@@ -10,47 +10,45 @@
 
 
                         @foreach ($product_data as $data)
-
-                        <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
-                            <div class="product d-flex flex-column">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="{{ $data->getImage() }}"
-                                        alt="Colorlib Template">
-                                    <span class="status">50% Off</span>
-                                    <div class="overlay"></div>
-                                </a>
-                                <div class="text py-3 pb-4 px-3">
-                                    <div class="d-flex">
-                                        <div class="cat">
-                                            <span>{{ $data->category }}</span>
+                            <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
+                                <div class="product d-flex flex-column">
+                                    <a href="#" class="img-prod"><img class="img-fluid" src="{{ $data->getImage() }}"
+                                            alt="Colorlib Template">
+                                        <span class="status">50% Off</span>
+                                        <div class="overlay"></div>
+                                    </a>
+                                    <div class="text py-3 pb-4 px-3">
+                                        <div class="d-flex">
+                                            <div class="cat">
+                                                <span>{{ $data->category }}</span>
+                                            </div>
+                                            <div class="rating">
+                                                <p class="text-right mb-0">
+                                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                                    <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class="rating">
-                                            <p class="text-right mb-0">
-                                                <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                                <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                                <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                                <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                                <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <h3><a href="{{ $data->getLink() }}">{{ $data->title }}</a></h3>
+                                        <div class="pricing">
+                                            {{-- <p class="price"><span class="mr-2 price-dc">$120.00</span> --}}
+                                            <span class="price-sale">${{ $data->getPrice() }}</span>
                                             </p>
                                         </div>
-                                    </div>
-                                    <h3><a href="{{ $data->getLink() }}">{{ $data->title }}</a></h3>
-                                    <div class="pricing">
-                                        {{-- <p class="price"><span class="mr-2 price-dc">$120.00</span> --}}
-                                            <span class="price-sale">${{ $data->getPrice() }}</span>
+                                        <p class="bottom-area d-flex px-3">
+                                            <a href="{{ route('cart.addfromstorepage', ['id' => $data->id]) }}"
+                                                class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
+                                                        class="ion-ios-add ml-1"></i></span></a>
+                                            <a href="{{ $data->getLink() }}"
+                                                class="buy-now text-center py-2">Details<span><i
+                                                        class="ion-ios-cart ml-1"></i></span></a>
                                         </p>
                                     </div>
-                                    <p class="bottom-area d-flex px-3">
-                                        <a href="{{ route('cart.addfromstorepage', ['id' => $data->id]) }}"
-                                            class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
-                                                    class="ion-ios-add ml-1"></i></span></a>
-                                        <a href="{{ $data->getLink() }}"
-                                            class="buy-now text-center py-2">Details<span><i
-                                                    class="ion-ios-cart ml-1"></i></span></a>
-                                    </p>
                                 </div>
                             </div>
-                        </div>
-
                         @endforeach
 
 
@@ -86,7 +84,7 @@
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                                    aria-expanded="true" aria-controls="collapseOne">Men's Shoes
+                                                    aria-expanded="true" aria-controls="collapseOne">Mushroom types
                                                 </a>
                                             </h4>
                                         </div>
@@ -94,13 +92,13 @@
                                             aria-labelledby="headingOne">
                                             <div class="panel-body">
                                                 <ul>
-                                                    <li><a href="#">Sport</a></li>
-                                                    <li><a href="#">Casual</a></li>
-                                                    <li><a href="#">Running</a></li>
-                                                    <li><a href="#">Jordan</a></li>
-                                                    <li><a href="#">Soccer</a></li>
-                                                    <li><a href="#">Football</a></li>
-                                                    <li><a href="#">Lifestyle</a></li>
+                                                    <li><a href="#">Pink Oyster</a></li>
+                                                    <li><a href="#">Blue Oyster</a></li>
+                                                    <li><a href="#">Lion's Mane</a></li>
+                                                    <li><a href="#">Shiitake</a></li>
+                                                    <li><a href="#">White Oyster</a></li>
+                                                    <li><a href="#">Morel</a></li>
+                                                    <li><a href="#">Enoki</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -110,7 +108,7 @@
                                             <h4 class="panel-title">
                                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
                                                     href="#collapseTwo" aria-expanded="false"
-                                                    aria-controls="collapseTwo">Women's Shoes
+                                                    aria-controls="collapseTwo">Accesories
                                                 </a>
                                             </h4>
                                         </div>
@@ -118,13 +116,13 @@
                                             aria-labelledby="headingTwo">
                                             <div class="panel-body">
                                                 <ul>
-                                                    <li><a href="#">Sport</a></li>
-                                                    <li><a href="#">Casual</a></li>
-                                                    <li><a href="#">Running</a></li>
-                                                    <li><a href="#">Jordan</a></li>
-                                                    <li><a href="#">Soccer</a></li>
-                                                    <li><a href="#">Football</a></li>
-                                                    <li><a href="#">Lifestyle</a></li>
+                                                    <li><a href="#">Kits</a></li>
+                                                    <li><a href="#">Mushrooms</a></li>
+                                                    <li><a href="#">Tools</a></li>
+                                                    <li><a href="#">Substrates</a></li>
+                                                    <li><a href="#">Cultures</a></li>
+                                                    <li><a href="#">Bulk Order</a></li>
+                                                    <li><a href="#">Guides</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -134,7 +132,7 @@
                                             <h4 class="panel-title">
                                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
                                                     href="#collapseThree" aria-expanded="false"
-                                                    aria-controls="collapseThree">Accessories
+                                                    aria-controls="collapseThree">Kits
                                                 </a>
                                             </h4>
                                         </div>
@@ -142,10 +140,10 @@
                                             aria-labelledby="headingThree">
                                             <div class="panel-body">
                                                 <ul>
-                                                    <li><a href="#">Jeans</a></li>
-                                                    <li><a href="#">T-Shirt</a></li>
-                                                    <li><a href="#">Jacket</a></li>
-                                                    <li><a href="#">Shoes</a></li>
+                                                    <li><a href="#">Growing Tents</a></li>
+                                                    <li><a href="#">Foraging Kits</a></li>
+                                                    <li><a href="#">All in one kits</a></li>
+                                                    <li><a href="#">Fruiting Kits</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -155,7 +153,7 @@
                                             <h4 class="panel-title">
                                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
                                                     href="#collapseFour" aria-expanded="false"
-                                                    aria-controls="collapseThree">Clothing
+                                                    aria-controls="collapseThree">Mycology
                                                 </a>
                                             </h4>
                                         </div>
@@ -163,10 +161,10 @@
                                             aria-labelledby="headingFour">
                                             <div class="panel-body">
                                                 <ul>
-                                                    <li><a href="#">Jeans</a></li>
-                                                    <li><a href="#">T-Shirt</a></li>
-                                                    <li><a href="#">Jacket</a></li>
-                                                    <li><a href="#">Shoes</a></li>
+                                                    <li><a href="#">Extracts</a></li>
+                                                    <li><a href="#">Substrates</a></li>
+                                                    <li><a href="#">Tools</a></li>
+                                                    <li><a href="#">Mushrooms</a></li>
                                                 </ul>
                                             </div>
                                         </div>

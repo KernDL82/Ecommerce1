@@ -11,7 +11,7 @@
                         <div class="row align-items-end">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="firstname">Firt Name</label>
+                                    <label for="firstname">First Name</label>
                                     <input type="text" class="form-control" placeholder="">
                                 </div>
                             </div>
@@ -101,14 +101,12 @@
                                     <span>Subtotal</span>
                                     <span>${{ app('CustomHelper')->formatPrice($cart_data->getSubtotal()) }}</span>
                                 </p>
-                                <p class="d-flex">
-                                    <span>Delivery</span>
-                                    <span>$0.00</span>
-                                </p>
-                                <p class="d-flex">
-                                    <span>Discount</span>
-                                    <span></span>
-                                </p>
+                                @foreach ($shipping_data as $data)
+                                    <p class="d-flex">
+                                        <span>{{ $data->title }}</span>
+                                        <span>+${{ app('CustomHelper')->formatPrice($data->price) }}</span>
+                                    </p>
+                                @endforeach
                                 <hr>
                                 <p class="d-flex total-price">
                                     <span>Estimate</span>

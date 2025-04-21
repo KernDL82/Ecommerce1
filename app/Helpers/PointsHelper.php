@@ -2,7 +2,6 @@
 
 namespace App\Helpers;
 
-// use App\Helpers\CustomHelper;
 use App\Models\points\Points;
 use App\Models\points\PointsDiscount;
 use Illuminate\Contracts\Database\Eloquent\Builder;
