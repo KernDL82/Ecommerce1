@@ -8,6 +8,8 @@
                 <div class="col-md-8 col-lg-10 order-md-last">
                     <div class="row">
 
+                        <x-core.products-search />
+                        <x-core.products-filter />
 
                         @foreach ($product_data as $data)
                             <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
@@ -213,6 +215,28 @@
                 </div>
             </div>
         </div>
+        <script type='text/javascript'>
+            (function(I, L, T, i, c, k, s) {
+                if (I.iticks) return;
+                I.iticks = {
+                    host: c,
+                    settings: s,
+                    clientId: k,
+                    cdn: L,
+                    queue: []
+                };
+                var h = T.head || T.documentElement;
+                var e = T.createElement(i);
+                var l = I.location;
+                e.async = true;
+                e.src = (L || c) + '/client/inject-v2.min.js';
+                h.insertBefore(e, h.firstChild);
+                I.iticks.call = function(a, b) {
+                    I.iticks.queue.push([a, b]);
+                };
+            })(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com',
+                'Fq5GpY5hddAEYoF2y_c', {});
+        </script>
     </section>
 
 
